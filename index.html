@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+    <title>Priya'S Desi Kitchen | Galaxy Mall, Kaduna</title>
+    <meta name="description" content="Authentic Indian & Indo-Chinese dining at Galaxy Mall, Kaduna. Order slow-cooked Biryanis, Tandoori rotis, and curries with live VAT bill calculator and WhatsApp dispatch." />
+    <meta property="og:title" content="Priya'S Desi Kitchen | Galaxy Mall, Kaduna" />
+    <meta property="og:description" content="Authentic Indian & Indo-Chinese dining at Galaxy Mall, Kaduna. Order slow-cooked Biryanis, Tandoori rotis, and curries with live VAT bill calculator and WhatsApp dispatch." />
+    <meta property="og:type" content="website" />
+
+    <!-- WOW.js & Animate.css for sleek scroll animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- Site Header (Top notice bar removed per user request) -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <!-- Zone 1: Brand Wordmark -->
+        <a href="#" class="brand-wordmark">
+          Priya'S <span>Desi Kitchen</span>
+        </a>
+
+        <!-- Zone 2: Navigation Links -->
+        <nav class="nav-links">
+          <a href="#menu" class="nav-link">Menu & Dishes</a>
+          <a href="#policy" class="nav-link">Order Guidelines</a>
+          <a href="#reviews" class="nav-link">Reviews & Points</a>
+          <a href="#location" class="nav-link">Location</a>
+        </nav>
+
+        <!-- Zone 3: Primary Actions -->
+        <div class="header-actions">
+          <button class="btn-cart-toggle btn-open-cart" aria-label="Open Cart">
+            <span>Order</span>
+            <span class="cart-counter-pill" style="display: none;">0</span>
+            <span class="cart-total-amount tabular-nums" style="color: var(--accent-gold-light);">₦0</span>
+          </button>
+          <a href="https://wa.me/2348159331121?text=Hello%20Priya's%20Desi%20Kitchen,%20I%20would%20like%20to%20order." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-header">
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Responsive Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column -->
+          <div class="hero-left-col wow fadeInLeft" data-wow-duration="0.8s">
+            <div class="hero-kicker">Galaxy Mall · City Centre, Kaduna</div>
+            <h1 class="hero-title">
+              Authentic Royal Indian Cuisine, <em>Crafted in Kaduna</em>
+            </h1>
+            <p class="hero-desc">
+              Slow-cooked Basmati dum biryanis, claypot tandoori naans, rich Punjabi curries, and sizzling Indo-Chinese street appetizers — prepared fresh daily using artisanal whole spices.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#menu" class="btn-primary">
+                <span>Explore Menu (65+ Dishes)</span>
+                <span>↓</span>
+              </a>
+              <button class="btn-secondary btn-open-cart">
+                <span>View Order & Bill</span>
+              </button>
+            </div>
+
+            <div class="hero-meta-row">
+              <div class="hero-meta-item">
+                <strong>100% Halal</strong> · Pure spices
+              </div>
+              <div class="hero-meta-item">
+                <strong>Clay Oven</strong> · Fresh naan
+              </div>
+              <div class="hero-meta-item">
+                <strong>Kaduna Dispatch</strong> · Direct WhatsApp
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Minimalist Showcase Frame -->
+          <div class="hero-right-col wow fadeInRight" data-wow-duration="0.8s">
+            <div class="hero-showcase-frame">
+              <img 
+                src="/src/assets/images/hero_biryani_handi_1793523316183.jpg" 
+                alt="Chicken Biriyani" 
+                class="hero-showcase-img"
+                referrerPolicy="no-referrer"
+              />
+              <div class="hero-showcase-caption">
+                <div>
+                  <h3 class="hero-caption-title">Chicken Biriyani</h3>
+                  <p style="font-size: 0.8rem; color: var(--text-muted);">Basmati rice, yogurt-marinated chicken, caramelized onions</p>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem; flex-shrink: 0;">
+                  <span class="hero-caption-price tabular-nums">₦20,500</span>
+                  <button id="btn-add-hero-biryani" class="btn-primary" style="padding: 0.5rem 1rem; font-size: 0.8rem;">
+                    + Add
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ordering & Billing Guidelines (Responsive & Clean) -->
+    <section id="policy" class="policy-section">
+      <div class="container">
+        <div class="policy-card-minimal wow fadeInUp" data-wow-duration="0.7s">
+          <div class="policy-header">
+            <h2 class="policy-title">Ordering & Billing Guidelines</h2>
+            <span class="vat-notice-clean">7.5% VAT Applicable</span>
+          </div>
+
+          <div class="policy-list-grid">
+            <div class="policy-list-item">
+              <span class="policy-idx">01</span>
+              <div><strong>Dine-In:</strong> 10% service charges apply for all dine-in guests.</div>
+            </div>
+
+            <div class="policy-list-item">
+              <span class="policy-idx">02</span>
+              <div><strong>Delivery:</strong> Charges apply based on delivery distance across Kaduna.</div>
+            </div>
+
+            <div class="policy-list-item">
+              <span class="policy-idx">03</span>
+              <div><strong>Address Note:</strong> Please specify your delivery address in the special instructions box.</div>
+            </div>
+
+            <div class="policy-list-item">
+              <span class="policy-idx">04</span>
+              <div><strong>Takeaway:</strong> Packaging charges applicable for takeaway packaging.</div>
+            </div>
+
+            <div class="policy-list-item">
+              <span class="policy-idx">05</span>
+              <div><strong>Final Invoice:</strong> The final bill will be sent directly by the accountant.</div>
+            </div>
+
+            <div class="policy-list-item">
+              <span class="policy-idx">06</span>
+              <div><strong>Confirmation:</strong> Payment confirms order. Prices are subject to change.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Menu Section -->
+    <section id="menu" class="menu-section">
+      <div class="container">
+        <!-- Section Header with Search -->
+        <div class="menu-header-bar wow fadeInUp">
+          <div>
+            <h2 class="menu-section-title">The Culinary Menu</h2>
+            <p class="menu-section-sub">Browse all authentic preparations, add to order, and calculate your bill</p>
+          </div>
+
+          <!-- Minimalist Search Input -->
+          <div class="search-box-minimal">
+            <span class="search-icon-minimal">🔍</span>
+            <input 
+              type="text" 
+              id="menu-search-input" 
+              class="search-input-minimal" 
+              placeholder="Search dishes (e.g. Biryani, Naan, Paneer...)" 
+              aria-label="Search dishes"
+            />
+            <button id="search-clear-btn" class="search-clear-minimal" aria-label="Clear search">×</button>
+          </div>
+        </div>
+
+        <!-- Filter Row (Dietary Filters & Counter) -->
+        <div class="filter-row wow fadeInUp">
+          <div class="diet-tabs">
+            <button class="btn-diet-tab active" data-diet="all">All Dishes</button>
+            <button class="btn-diet-tab" data-diet="veg">Vegetarian</button>
+            <button class="btn-diet-tab" data-diet="non-veg">Non-Veg</button>
+            <button class="btn-diet-tab" data-diet="special">Chef Specials</button>
+          </div>
+
+          <div id="dish-counter-text" class="dish-counter-minimal tabular-nums">
+            Showing dishes...
+          </div>
+        </div>
+
+        <!-- Category Navigation Bar (Touch-friendly & Smooth Swipe) -->
+        <div class="category-nav-bar wow fadeInUp" id="category-scroller" role="tablist">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Menu Cards Grid (Picture First, Faithfully matching the Title) -->
+        <div id="menu-grid" class="menu-grid-clean">
+          <!-- Populated by JS with picture on top of each card matching title -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Minimalist Reviews & Loyalty Rewards -->
+    <section id="reviews" class="reviews-section">
+      <div class="container">
+        <!-- 200 Points Rewards Card -->
+        <div class="rewards-card-minimal wow fadeInUp">
+          <div>
+            <h3 class="rewards-headline">Earn 200 Points with Your Order ID</h3>
+            <p class="rewards-subtext">
+              Review your meal with your verified Order ID to earn <strong>200 reward points</strong>. Review 10 different orders to claim a complimentary voucher of up to <strong>₦2,000</strong>.
+            </p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+            <span id="user-points-badge" class="tabular-nums" style="font-size: 0.9rem; font-weight: 600; color: var(--accent-gold-light); background: var(--bg-card); padding: 0.5rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+              0 pts
+            </span>
+            <button class="btn-primary btn-open-review-modal">
+              <span>Leave a Review</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Customer Reviews Grid -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 0.75rem;" class="wow fadeInUp">
+          <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: #FFFFFF;">Dining Feedback</h3>
+          <button class="btn-secondary btn-open-review-modal" style="padding: 0.45rem 1rem; font-size: 0.8rem;">
+            + Rate Your Meal
+          </button>
+        </div>
+
+        <div id="reviews-grid" class="reviews-grid-minimal">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Minimalist WhatsApp Updates Card -->
+    <section class="updates-strip-section">
+      <div class="container">
+        <div class="updates-box-minimal wow fadeInUp">
+          <div>
+            <h3 class="updates-title">Join WhatsApp Updates</h3>
+            <p class="updates-desc">
+              Receive notifications on weekly chef specials, holiday menus, and Kaduna promotions. Zero spam.
+            </p>
+          </div>
+
+          <form id="updates-subscription-form" class="updates-form-clean">
+            <div class="updates-inputs-wrap">
+              <input 
+                type="tel" 
+                id="updates-whatsapp-input" 
+                class="form-input-clean" 
+                placeholder="WhatsApp number *" 
+                required 
+              />
+              <input 
+                type="email" 
+                id="updates-email-input" 
+                class="form-input-clean" 
+                placeholder="Email (optional)" 
+              />
+            </div>
+            <label style="display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.76rem; color: var(--text-muted); cursor: pointer;">
+              <input type="checkbox" id="updates-agree-checkbox" required checked style="margin-top: 3px;" />
+              <span>I agree to receive updates from Priya'S Desi Kitchen.</span>
+            </label>
+            <button type="submit" class="btn-primary" style="justify-content: center; padding: 0.75rem;">
+              <span>Join Updates</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Contact (Galaxy Mall, Kaduna) -->
+    <section id="location" style="padding: 3.5rem 0; border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem;" class="wow fadeInUp">
+          <div>
+            <h4 style="font-family: var(--font-serif); font-size: 1.35rem; color: #FFFFFF; margin-bottom: 0.5rem;">Priya's Desi Kitchen</h4>
+            <p style="color: var(--text-secondary); font-size: 0.875rem; line-height: 1.6; margin-bottom: 1rem;">
+              Galaxy Mall, 22 Waff Road,<br />
+              Off Ahmadu Bello Way, City Centre,<br />
+              Kaduna, Nigeria
+            </p>
+            <a href="https://maps.google.com/?q=Galaxy+Mall,+22+Waff+road,+Kaduna,+Nigeria" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="font-size: 0.8125rem; padding: 0.5rem 1rem;">
+              <span>Google Maps ↗</span>
+            </a>
+          </div>
+
+          <div>
+            <h4 style="font-family: var(--font-serif); font-size: 1.35rem; color: #FFFFFF; margin-bottom: 0.5rem;">Operating Hours</h4>
+            <p style="color: var(--text-secondary); font-size: 0.875rem; line-height: 1.6;">
+              <strong>Monday – Sunday:</strong><br />
+              Opens at 11:30 AM<br />
+              Closes at 10:30 PM
+            </p>
+            <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0.5rem;">
+              Fresh tandoor preparation starts at 12:00 PM.
+            </p>
+          </div>
+
+          <div>
+            <h4 style="font-family: var(--font-serif); font-size: 1.35rem; color: #FFFFFF; margin-bottom: 0.5rem;">Direct Order Line</h4>
+            <p style="color: var(--text-secondary); font-size: 0.875rem; line-height: 1.6; margin-bottom: 0.5rem;">
+              Accountant & Desk: <a href="tel:+2348159331121" class="tabular-nums" style="color: var(--accent-gold-light);">+234 815 933 1121</a>
+            </p>
+            <p style="color: var(--text-muted); font-size: 0.8rem;">
+              Direct WhatsApp order dispatch with instant automated itemized bill.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Minimalist Footer -->
+    <footer class="site-footer-minimal">
+      <div class="container">
+        <div class="footer-top-row">
+          <div>
+            <div class="footer-brand">Priya'S Desi Kitchen</div>
+            <p style="max-width: 420px; line-height: 1.6;">
+              Bespoke Indian & fusion dining at Galaxy Mall, Kaduna. Basmati Dum Biryanis, Claypot Tandoor breads, and savory curries.
+            </p>
+          </div>
+
+          <div style="display: flex; gap: 2.5rem; flex-wrap: wrap;">
+            <div>
+              <strong style="color: #FFFFFF; display: block; margin-bottom: 0.4rem;">Direct Contact</strong>
+              <a href="https://wa.me/2348159331121" style="color: var(--accent-gold-light);">+234 815 933 1121</a>
+            </div>
+            <div>
+              <strong style="color: #FFFFFF; display: block; margin-bottom: 0.4rem;">Billing Rules</strong>
+              <span>7.5% VAT · 10% Dine-In</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+          <div>© 2026 Priya'S Desi Kitchen. All rights reserved. Prices subject to change.</div>
+          <div>Final bill sent by accountant. Payment confirms order.</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Sleek Responsive Slide-Over Drawer -->
+    <div id="cart-drawer-backdrop" class="cart-drawer-backdrop">
+      <div class="cart-drawer-sleek" role="dialog" aria-modal="true" aria-label="Your Order and Bill">
+        <div class="drawer-top">
+          <h2 class="drawer-title">Your Order</h2>
+          <button id="btn-close-drawer" class="btn-drawer-close" aria-label="Close cart">✕</button>
+        </div>
+
+        <!-- Order Mode Selector -->
+        <div class="drawer-order-type">
+          <div class="type-buttons-group">
+            <button class="btn-type-opt btn-order-type active" data-type="dine-in">Dine-in (+10%)</button>
+            <button class="btn-type-opt btn-order-type" data-type="delivery">Delivery</button>
+            <button class="btn-type-opt btn-order-type" data-type="takeaway">Takeaway</button>
+          </div>
+        </div>
+
+        <!-- Scrollable items -->
+        <div id="cart-items-scroll" class="drawer-scroll-items">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Empty State View -->
+        <div id="cart-empty-view" class="cart-empty-view" style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:2rem; text-align:center;">
+          <div style="font-size: 2.2rem; margin-bottom: 0.75rem; opacity: 0.4;">🍽️</div>
+          <h3 style="font-family: var(--font-serif); font-size: 1.25rem; color: #FFFFFF; margin-bottom: 0.35rem;">Your order is empty</h3>
+          <p style="font-size: 0.8125rem; color: var(--text-muted);">Select dishes from the menu to build your order.</p>
+        </div>
+
+        <!-- Drawer Footer with Bill Calculation -->
+        <div id="cart-drawer-footer" class="drawer-bottom-panel" style="display: none;">
+          <!-- Delivery instructions / address required by user -->
+          <div class="special-instruction-box">
+            <label for="special-instructions-input" style="display:block; font-size:0.75rem; font-weight:600; color:var(--text-secondary); margin-bottom:0.25rem;">
+              Delivery Address / Special Instructions:
+            </label>
+            <textarea 
+              id="special-instructions-input" 
+              class="instruction-textarea" 
+              placeholder="e.g. House 4, Malali Kaduna / Less chilli"
+            ></textarea>
+          </div>
+
+          <!-- Bill Summary Calculation -->
+          <div class="bill-rows-clean">
+            <div style="display:flex; justify-content:space-between;">
+              <span>Subtotal:</span>
+              <span id="bill-subtotal" class="tabular-nums">₦0</span>
+            </div>
+            <div id="bill-service-row" style="display:flex; justify-content:space-between;">
+              <span>10% Dine-In Service Charge:</span>
+              <span id="bill-service-charge" class="tabular-nums">₦0</span>
+            </div>
+            <div style="display:flex; justify-content:space-between;">
+              <span>7.5% VAT:</span>
+              <span id="bill-vat" class="tabular-nums">₦0</span>
+            </div>
+            <div class="total-clean">
+              <span>Estimated Total:</span>
+              <span id="bill-total" class="tabular-nums" style="color: var(--accent-gold-light);">₦0</span>
+            </div>
+          </div>
+
+          <div id="bill-mode-note" style="font-size: 0.72rem; color: var(--text-muted); text-align: center; margin-bottom: 0.75rem; line-height: 1.4;">
+            Final bill sent by accountant. Payment will confirm order.
+          </div>
+
+          <button id="btn-checkout-whatsapp" class="btn-checkout-clean">
+            <span>Send Order via WhatsApp</span>
+            <span>💬</span>
+          </button>
+
+          <button id="btn-copy-bill" style="width: 100%; margin-top: 0.45rem; padding: 0.45rem; font-size: 0.75rem; color: var(--text-muted); text-align: center;">
+            Copy Bill Summary
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Sleek Order Pill (Mobile & Desktop) -->
+    <div id="floating-cart-pill" class="floating-order-btn" style="display: none;">
+      <span>Order (0)</span>
+      <span>·</span>
+      <span class="tabular-nums">₦0</span>
+    </div>
+
+    <!-- Minimalist Review Modal -->
+    <div id="review-modal" class="modal-overlay">
+      <div class="modal-box-clean">
+        <button id="btn-close-review-modal" style="position: absolute; top: 1.25rem; right: 1.25rem; color: var(--text-muted); font-size: 1.2rem;">✕</button>
+        <span style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-gold-light); display: block; margin-bottom: 0.25rem;">+200 Points Bonus</span>
+        <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: #FFFFFF; margin-bottom: 0.35rem;">Rate Your Dining</h3>
+        <p style="font-size: 0.8125rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+          Provide your Order ID to earn 200 points towards a free order voucher up to ₦2,000.
+        </p>
+
+        <form id="review-submit-form" style="display: flex; flex-direction: column; gap: 0.85rem;">
+          <div>
+            <label style="font-size: 0.78rem; font-weight: 600; color: var(--text-secondary); display: block; margin-bottom: 0.25rem;">Star Rating:</label>
+            <div id="star-rating-select" style="display: flex; gap: 0.4rem; font-size: 1.5rem; color: #554436; cursor: pointer;">
+              <span data-value="1" class="selected">★</span>
+              <span data-value="2" class="selected">★</span>
+              <span data-value="3" class="selected">★</span>
+              <span data-value="4" class="selected">★</span>
+              <span data-value="5" class="selected">★</span>
+            </div>
+          </div>
+
+          <div>
+            <label for="review-order-id-input" style="font-size: 0.78rem; font-weight: 600; color: var(--text-secondary); display: block; margin-bottom: 0.25rem;">Order ID * (From WhatsApp invoice):</label>
+            <input 
+              type="text" 
+              id="review-order-id-input" 
+              class="form-input-clean" 
+              placeholder="e.g. PDK-7841" 
+              required 
+            />
+          </div>
+
+          <div>
+            <label for="review-name-input" style="font-size: 0.78rem; font-weight: 600; color: var(--text-secondary); display: block; margin-bottom: 0.25rem;">Your Name *:</label>
+            <input 
+              type="text" 
+              id="review-name-input" 
+              class="form-input-clean" 
+              placeholder="e.g. Maryam Bello" 
+              required 
+            />
+          </div>
+
+          <div>
+            <label for="review-text-input" style="font-size: 0.78rem; font-weight: 600; color: var(--text-secondary); display: block; margin-bottom: 0.25rem;">Review *:</label>
+            <textarea 
+              id="review-text-input" 
+              class="form-input-clean" 
+              rows="3" 
+              placeholder="How was the flavor, portion, and delivery?" 
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary" style="justify-content: center; padding: 0.75rem; margin-top: 0.5rem;">
+            <span>Submit Review (+200 Points)</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Global Toast Notice -->
+    <div id="toast-notice" class="toast-notice"></div>
+
+    <!-- Main JavaScript Logic -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

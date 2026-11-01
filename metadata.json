@@ -1,0 +1,6 @@
+{
+  "name": "Priya'S Desi Kitchen",
+  "description": "Authentic North & South Indian and fusion cuisine at Galaxy Mall, Kaduna. Order biryani, tandoori curries, fresh naan, and specialties with real-time bill calculation and WhatsApp ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
